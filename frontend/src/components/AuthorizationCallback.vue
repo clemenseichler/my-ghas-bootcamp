@@ -8,6 +8,7 @@ export default {
   computed: {
     code() {
       const params = new URLSearchParams(window.location.search)
+      const secret = 'abcdef'
       return params.get('code')
     },
     hasCode() {
