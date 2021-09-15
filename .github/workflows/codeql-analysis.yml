@@ -62,7 +62,7 @@ jobs:
     - name: Autobuild
       if: matrix.language == 'java'  
     #  uses: github/codeql-action/autobuild@v1
-      run: ./storage-service/mvnw clean install -DskipTests
+      run: echo 'Java qill be skipped'
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
