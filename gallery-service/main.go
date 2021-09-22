@@ -671,6 +671,7 @@ func authnMiddleware(next http.Handler) http.Handler {
 				next.ServeHTTP(w, r)
 				return
 			} else {
+				log.Printf("AuthN: Received token with invalid claims for %s", authz)
 				log.Printf("AuthN: Received token with invalid claims")
 				http.Error(w, "Forbidden", http.StatusForbidden)
 				return
