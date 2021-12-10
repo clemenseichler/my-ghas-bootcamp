@@ -22,6 +22,6 @@ SecretStorage==2.3.1
 six==1.12.0
 urllib3==1.26.5
 Werkzeug==1.0.1
-django==2.2.24
+django==2.2.25
 django-two-factor-auth==1.13
 django-piston==0.2.3
